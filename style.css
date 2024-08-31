@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,7 +7,6 @@ body {
 }
 
 header {
-  padding: 20px;
   background-color: #000000;
 }
 
@@ -59,9 +59,13 @@ header nav ul li a.get_quote {
   background-color: #5752ca;
   color: #000000;
   padding: 10px 20px;
+  margin-right: 3rem;
   text-decoration: none;
   font-weight: bold;
   border-radius: 20px;
+}
+ header nav ul li a:hover{
+  color: #9c9ca7;
 }
 
 .hero {
@@ -77,7 +81,6 @@ header nav ul li a.get_quote {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
   position: relative;
 }
 .difference {
@@ -168,7 +171,7 @@ header nav ul li a.get_quote {
 .subtle_hr {
   border: none;
   height: 1px;
-  background-color: hsl(0, 0%, 95%);
+  background-color: #0a0a0a;
   margin: 0;
   opacity: 0.3;
 }
@@ -176,8 +179,12 @@ header nav ul li a.get_quote {
 .details {
   display: flex;
   justify-content: space-between;
-  padding: 50px 20px;
+  align-items: center;
   background-color: #000000;
+}
+.stat {
+  margin-top: 0;
+  justify-content: center;
 }
 
 .stat h2 {
@@ -188,7 +195,7 @@ header nav ul li a.get_quote {
 .subtle_vr {
   width: 1px;
   height: auto;
-  background-color: hsl(0, 0%, 95%);
+  background-color: #0a0a0a;
   opacity: 0.3;
   margin: 0;
 }
@@ -206,7 +213,6 @@ header nav ul li a.get_quote {
   font-weight: bold;
   display: inline-block;
   border-radius: 20px;
-  margin-top: 20px;
 }
 
 .ux_team {
@@ -235,7 +241,7 @@ header nav ul li a.get_quote {
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: #cfcbcb;
+  background-color: #000000;
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.1);
   display: none;
@@ -243,12 +249,7 @@ header nav ul li a.get_quote {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.sidebar li {
-  width: 100%;
-}
-.sidebar a {
-  width: 100%;
-}
+
 .menu_button {
   display: none;
 }
@@ -260,6 +261,18 @@ header nav ul li a.get_quote {
   }
   .img_section .image_container img {
     width: 80%;
+  }
+  .hero_content {
+    padding: 0 15rem;
+  }
+  header {
+    padding: 0 11rem;
+  }
+  .details {
+    padding: 0px 15rem;
+  }
+  .ux_team {
+    padding: 0px 15rem;
   }
 }
 
@@ -275,4 +288,19 @@ header nav ul li a.get_quote {
   .img_section .image_container img {
     width: 92%;
   }
+  .stat {
+    padding: 0 20px;
+  }
+  .deedat {
+    padding: 0 20px;
+  }
+  .ux_approach {
+    padding: 0 20px;
+  }
+  .sidebar li {
+  width: 100%;
+}
+.sidebar a:hover {
+  color: #9c9ca7;
+}
 }
