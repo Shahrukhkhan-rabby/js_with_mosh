@@ -1,87 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plan Manage Build</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <ul class="left_menu">
-          <li><a href="">Product</a></li>
-          <li class="dot">.</li>
-          <li><a href="">Solutions</a></li>
-          <li class="dot">.</li>
-          <li><a href="">Pricing</a></li>
-          <li class="dot">.</li>
-          <li><a href="">Developers</a></li>
-        </ul>
-        <ul class="right_menu">
-          <li><a href="">FAQ</a></li>
-          <li><a href="" class="get_quote">Get Quote</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="sidebar">
+                <li class="hideOnWeb" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="hideOnWeb"><a href="#">Product</a></li>
+                <li class="hideOnWeb"><a href="#">Solutions</a></li>
+                <li class="hideOnWeb"><a href="#">Pricing</a></li>
+                <li class="hideOnWeb"><a href="#">Developers</a></li>
+                <li class="hideOnWeb"><a href="#">FAQ</a></li>
+                <li class="hideOnWeb"><a href="#" class="get_quote">Get Quote</a></li>
+          </ul>
+            <ul class="left_menu">
+                <li class="hideOnMobile"><a href="#">Product</a></li>
+                <li class="hideOnMobile" class="dot">.</li>
+                <li class="hideOnMobile"><a href="#">Solutions</a></li>
+                <li class="hideOnMobile" class="dot">.</li>
+                <li class="hideOnMobile"><a href="#">Pricing</a></li>
+                <li class="hideOnMobile" class="dot">.</li>
+                <li class="hideOnMobile"><a href="#">Developers</a></li>
+            </ul>
+            <ul class="right_menu">
+                <li class="hideOnMobile"><a href="#">FAQ</a></li>
+                <li class="hideOnMobile"><a href="#" class="get_quote">Get Quote</a></li>
+                <li class="menu_button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="hero">
-      <div class="hero_content">
-        <h1 class="left_text">
-          Plan. <br />
-          Manage. <br />
-          Build
-        </h1>
-        <span class="slash">/</span>
-        <div class="image_container">
-          <img src="" alt="" />
+        <div class="hero_content">
+            <h1 class="left_text">
+                Plan. <br />
+                Manage. <br />
+                Build
+            </h1>
+            <span class="slash hideOnMobile">/</span>
+            <a href="#" class="work_button hideOnMobile">Work →</a>
         </div>
-        <a href="" class="work_button">Work →</a>
-      </div>
+    </section>
+    <section class="difference">
+        <div class="def_work">
+            <h3 class="hideOnWeb def_text">Our Difference is in The Finishing</h3>
+            <a href="#" class="def_button hideOnWeb">Work →</a>
+        </div>
+    </section>
+
+    <section class="img_section">
+        <div class="image_container">
+            <img src="Untitled-1.png" alt="Example Image" />
+        </div>
     </section>
 
     <hr class="subtle_hr" />
 
     <section class="details">
-      <div class="stat">
-        <h2>30%</h2>
-        <p class="text_descriptive">
-          30% Lead Up <br />
-          From Last Year 2023
-        </p>
-      </div>
+        <div class="stat">
+            <h2>30%</h2>
+            <p class="text_descriptive">
+                30% Lead Up <br />
+                From Last Year 2023
+            </p>
+        </div>
 
-      <div class="subtle_vr"></div>
+        <div class="subtle_vr"></div>
 
-      <div class="ux_approach">
-        <h3>Ux Approach</h3>
-        <p class="text_descriptive">
-          In every ads page we do best UX Strategy To get more leads than ever.
-        </p>
-        <a href="" class="invest_now">Invest Now →</a>
-      </div>
+        <div class="ux_approach">
+            <h3>Ux Approach</h3>
+            <p class="text_descriptive">
+                In every ads page we do best UX Strategy To get more leads than ever.
+            </p>
+            <a href="#" class="invest_now">Invest Now →</a>
+        </div>
     </section>
 
     <hr class="subtle_hr" />
 
     <section class="ux_team">
-      <div>
-        <img width="51px" height="51" src="Ahmed Deedat.jpeg" alt="" class="circular-image">
-        <img width="51px" height="51" src="Ahmed Deedat.jpeg" alt="" class="circular-image">
-        <img width="51px" height="51" src="Ahmed Deedat.jpeg" alt="" class="circular-image">
-        <img width="51px" height="51" src="Ahmed Deedat.jpeg" alt="" class="circular-image">
-      </div>
-      <span class="slash">/</span>
-      <div>
-        <p class="text_descriptive">
-          There UX team great amazing work we got more than 2X leads and we get
-          nice projects.
-        </p>
-        <p id="Daniel">Daniel, Design Lead @Google</p>
-      </div>
+        <div>
+            <img
+                width="51px"
+                height="51px"
+                src="Ahmed Deedat.jpeg"
+                alt="Team Member"
+                class="circular-image"
+            />
+            <img
+                width="51px"
+                height="51px"
+                src="Ahmed Deedat.jpeg"
+                alt="Team Member"
+                class="circular-image"
+            />
+            <img
+                width="51px"
+                height="51px"
+                src="Ahmed Deedat.jpeg"
+                alt="Team Member"
+                class="circular-image"
+            />
+            <img
+                width="51px"
+                height="51px"
+                src="Ahmed Deedat.jpeg"
+                alt="Team Member"
+                class="circular-image"
+            />
+        </div>
+        <span class="slash">/</span>
+        <div>
+            <p class="text_descriptive">
+                There UX team great amazing work we got more than 2X leads and we get nice projects.
+            </p>
+            <p id="Daniel">Daniel, Design Lead @Google</p>
+        </div>
     </section>
+
     <script src="index.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
